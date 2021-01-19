@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  min-width: 248px;
+  max-width: 700px;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "GridSpan Grid2"
+    "GridSpan Grid3";
+}
+
+.GridSpan {
+  align-content: center;
+  grid-area: GridSpan;
+  background-color: rgb(169, 196, 245);
+}
+.family-img {
+  margin: 2rem;
+  width: 250px;
+  height: 300px;
+}
+
+.Grid2 {
+  grid-area: Grid2;
+  background-color: rgb(224, 105, 58);
+}
+
+.Grid3 {
+  grid-area: Grid3;
+  background-color: darkorange;
+}
+.joinbt {
+  background-color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 2.5rem;
+}
+.navmeny {
+  text-align: center;
+}
